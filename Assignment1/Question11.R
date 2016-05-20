@@ -1,0 +1,5 @@
+attach(chickwts)
+head(chickwts)
+chick.aov <- aov(weight~feed,data=chickwts)
+summary(chick.aov) 
+boxplot(chick.aov$res~feed,data=chickwts)
